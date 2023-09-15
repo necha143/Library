@@ -6,18 +6,18 @@
     <title>Show</title>
 </head>
 <body>
-<p th:text="${'Имя: ' + person.getFIO()}">VALUE</p>
-<p th:text="${'Год рождения: ' + person.getYearOfBirth()}">VALUE</p>
-<p th:text="${'ID: ' + person.getPersonID()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'Имя: ' + person.getFIO()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'Год рождения: ' + person.getYearOfBirth()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'ID: ' + person.getPersonID()}">VALUE</p>
 
 <div th:if="${book.isEmpty()}">
-    <p>Человек пока не взял ни одной книги</p>
+    <p style="font-size: 20px">Человек пока не взял ни одной книги</p>
     <hr/>
 </div>
 
 <div th:if="${!book.isEmpty()}">
     <hr/>
-    <b>Книги:</b>
+    <b style="font-size: 20px">Книги:</b>
     <br/>
     <table th:each="element : ${book}">
         <tr th:text="${element.getName() + ', ' + element.getAuthor() + ', ' + element.getYear()}">book</tr>
@@ -26,13 +26,19 @@
 </div>
 
 <form th:method="GET" th:action="@{/people/{id}/edit(id=${person.getPersonID()})}">
-    <input type="submit" value="Редактировать"/>
+    <input style="font-size: 20px" type="submit" value="Редактировать"/>
 </form>
 
 <br/>
 
 <form th:method="DELETE" th:action="@{/people/{id}(id=${person.getPersonID()})}">
-    <input type="submit" value="Удалить"/>
+    <input style="font-size: 20px" type="submit" value="Удалить"/>
+</form>
+
+<br/>
+
+<form th:method="GET" th:action="@{/main}">
+    <input style="font-size: 20px" type="submit" value="Вернуться на главную">
 </form>
 
 </body>

@@ -5,18 +5,25 @@
     <title>Редактировать человека</title>
 </head>
 <body>
+<b style="font-size: 30px">Редактирование пользователя</b>
+<br/> <br/>
 
 <form th:method="PATCH" th:action="@{/people/{id}(id=${person.getPersonID()})}" th:object="${person}">
-    <label for="FIO">Введите ФИО: </label>
-    <input type="text" th:field="*{FIO}" id="FIO"/>
+    <label style="font-size: 25px" for="FIO">Введите ФИО: </label>
+    <input style="font-size: 20px" size="30" type="text" th:field="*{FIO}" id="FIO"/>
     <div style="color:red" th:if="${#fields.hasErrors('FIO')}" th:errors="*{FIO}">Full Name Error</div>
     <br/>
-    <label for="yearOfBirth">Введите год рождения: </label>
-    <input type="text" th:field="*{yearOfBirth}" id="yearOfBirth"/>
+    <label style="font-size: 25px" for="yearOfBirth">Введите год рождения: </label>
+    <input style="font-size: 20px" size="30" type="text" th:field="*{yearOfBirth}" id="yearOfBirth"/>
     <div style="color:red" th:if="${#fields.hasErrors('yearOfBirth')}" th:errors="*{yearOfBirth}">Year of birth Error</div>
     <br/>
-    <input type="submit" value="Редактировать!"/>
+    <input style="font-size: 20px" type="submit" value="Редактировать!"/>
 </form>
 
+<br/>
+
+<form th:method="GET" th:action="@{/main}">
+    <input style="font-size: 20px" type="submit" value="Вернуться на главную">
+</form>
 </body>
 </html>

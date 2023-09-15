@@ -5,16 +5,26 @@
     <title>Index</title>
 </head>
 <body>
+<b style="font-size: 30px">Все книги</b>
+<br/> <br/>
 
 <div th:each="book : ${book}">
-    <a th:href="@{/book/{id}(id=${book.getBookID()})}"
+    <a style="font-size: 25px" th:href="@{/book/{id}(id=${book.getBookID()})}"
        th:text="${book.getName() + ', ' + book.getAuthor() + ', ' + book.getYear()}">book</a>
 </div>
 
 <br/>
 <hr/>
 
-<a href="/book/new">Добавить книгу</a>
+<form th:action="@{/book/new}">
+    <input style="font-size: 20px" type="submit" value="Добавить книгу">
+</form>
+
+<br/>
+
+<form th:method="GET" th:action="@{/main}">
+    <input style="font-size: 20px" type="submit" value="Вернуться на главную">
+</form>
 
 </body>
 </html>

@@ -7,44 +7,49 @@
 </head>
 <body>
 
-<p th:text="${'Название: ' + book.getName()}">VALUE</p>
-<p th:text="${'Автор: ' + book.getAuthor()}">VALUE</p>
-<p th:text="${'Год: ' + book.getYear()}">VALUE</p>
-<p th:text="${'ID: ' + book.getBookID()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'Название: ' + book.getName()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'Автор: ' + book.getAuthor()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'Год: ' + book.getYear()}">VALUE</p>
+<p style="font-size: 25px" th:text="${'ID: ' + book.getBookID()}">VALUE</p>
 
 <hr/>
 
 <div th:if="${owner}">
-    <span>Книга сейчас у: </span> <span th:text="${owner.getFIO()}">Person Name</span>
+    <span style="font-size: 20px">Книга сейчас у: </span> <span style="font-size: 20px" th:text="${owner.getFIO()}">Person Name</span>
 
     <form th:method="PATCH" th:action="@{/book/{id}/release(id=${book.getBookID()})}">
-        <input type="submit" value="Освободить книгу"/>
+        <input style="font-size: 15px" type="submit" value="Освободить книгу"/>
     </form>
 </div>
 
 <div th:if="${people}">
-    <span>Эта книга свободна. Кому назначить ее?</span>
+    <span style="font-size: 20px">Эта книга свободна. Кому назначить ее?</span>
     <form th:method="PATCH" th:action="@{/book/{id}/assign(id=${book.getBookID()})}">
-        <label for="person">Выберите человека</label>
+        <label style="font-size: 20px" for="person">Выберите человека</label>
         <select th:object="${person}" th:field="*{personID}" id="person">
             <option th:each="person : ${people}" th:value="${person.getPersonID()}" th:text="${person.getFIO()}">
             </option>
         </select>
-        <input type="submit" value="Назначить книгу"/>
+        <input style="font-size: 15px" type="submit" value="Назначить книгу"/>
     </form>
 </div>
 
 <hr/>
 
-<form th:method="GET" th:action="@{/book/{id}/edit(id=${book.getBookID()})}">
-    <input type="submit" value="Редактировать"/>
+<form th:method="GET" th:action="@{/book/{id}/edit(id = ${book.getBookID()})}">
+    <input style="font-size: 20px" type="submit" value="Редактировать">
 </form>
 
 <br/>
 
-<form th:method="DELETE" th:action="@{/book/{id}(id=${book.getBookID()})}">
-    <input type="submit" value="Удалить"/>
+<form th:method="DELETE" th:action="@{/book/{id}(id = ${book.getBookID()})}">
+    <input style="font-size: 20px" type="submit" value="Удалить">
 </form>
+
+<br/>
+
+<form th:method="GET" th:action="@{/main}">
+    <input style="font-size: 20px" type="submit" value="Вернуться на главную">
 
 </body>
 </html>

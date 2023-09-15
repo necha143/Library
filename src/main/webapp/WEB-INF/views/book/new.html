@@ -6,21 +6,30 @@
     <title>New book</title>
 </head>
 <body>
+<b style="font-size: 30px">Добавление книги</b>
+<br/> <br/>
 
 <form th:method="POST" th:action="@{/book}" th:object="${book}">
-    <label for="name">Введите название: </label>
-    <input type="text" th:field="*{name}" id="name"/>
+    <label style="font-size: 25px" for="name">Введите название: </label>
+    <input style="font-size: 20px" type="text" th:field="*{name}" id="name"/>
     <div style="color:red" th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Full Name Error</div>
     <br/>
-    <label for="author">Введите автора: </label>
-    <input type="text" th:field="*{author}" id="author"/>
+    <label style="font-size: 25px" for="author">Введите автора: </label>
+    <input style="font-size: 20px" type="text" th:field="*{author}" id="author"/>
     <div style="color:red" th:if="${#fields.hasErrors('author')}" th:errors="*{author}">Author Error</div>
     <br/>
-    <label for="year">Введите год: </label>
-    <input type="text" th:field="*{year}" id="year"/>
+    <label style="font-size: 25px" for="year">Введите год: </label>
+    <input style="font-size: 20px" type="text" th:field="*{year}" id="year"/>
     <div style="color:red" th:if="${#fields.hasErrors('year')}" th:errors="*{year}">Year Error</div>
     <br/>
-    <input type="submit" value="Добавить!"/>
+    <br/>
+    <input style="font-size: 20px" type="submit" value="Добавить!"/>
+</form>
+
+<br/>
+
+<form th:method="GET" th:action="@{/main}">
+    <input style="font-size: 20px" type="submit" value="Вернуться на главную">
 </form>
 
 </body>

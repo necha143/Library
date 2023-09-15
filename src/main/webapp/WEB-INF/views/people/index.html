@@ -5,16 +5,26 @@
     <title>Index</title>
 </head>
 <body>
+<b style="font-size: 30px">Все пользователи</b>
+<br/> <br/>
 
 <div th:each="person : ${people}">
-    <a th:href="@{/people/{id}(id=${person.getPersonID()})}"
+    <a style="font-size: 25px" th:href="@{/people/{id}(id=${person.getPersonID()})}"
        th:text="${person.getFIO() + ', ' + person.getYearOfBirth()}">user</a>
 </div>
 
 <br/>
 <hr/>
 
-<a href="/people/new">Добавить человека</a>
+<form th:action="@{/people/new}">
+    <input style="font-size: 20px" type="submit" value="Добавить пользователя">
+</form>
+
+<br/>
+
+<form th:method="GET" th:action="@{/main}">
+    <input style="font-size: 20px" type="submit" value="Вернуться на главную">
+</form>
 
 </body>
 </html>
