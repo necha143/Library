@@ -21,7 +21,36 @@
 9) Все поля должны валидироваться - с помощью @Valid и Spring Validator, если это требуется. </br>
 
 ## Страницы web-приложения
-
+__Главная страница (/main)__  
+<img width="496" alt="image" src="https://github.com/necha143/Library/assets/113212609/fe5b35bf-b7ce-41ef-a1b6-611b69096ac7"> 
+</br> </br> 
+__Все пользователи (/people)__  
+<img width="550" alt="image" src="https://github.com/necha143/Library/assets/113212609/8bbcae45-7660-435e-b0bc-df620a4b51d8"> 
+</br> </br>
+__Страница пользователя (/people/{id})__  
+<img width="550" alt="image" src="https://github.com/necha143/Library/assets/113212609/d325ef58-b984-403a-bb52-135dedc63752"> 
+</br>
+<img width="520" alt="image" src="https://github.com/necha143/Library/assets/113212609/b345cd37-5685-4af6-973b-52e464b156f5"> 
+</br> </br>
+__Редактирование пользователя (/people/{id}/edit)__  
+<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/f9596ea6-2f91-474e-bb11-d130aac25216"> 
+</br> </br>
+__Добавление пользователя (/people/new)__  
+<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/5be40de4-f9cf-45ae-aa93-79d63593b262"> 
+</br> </br>
+__Все книги (/book)__  
+<img width="700" alt="image" src="https://github.com/necha143/Library/assets/113212609/c720e00b-6443-4422-9d09-a8e895c0098a"> 
+</br> </br>
+__Страница книги (/book/{id})__  
+<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/9668475c-4b62-4274-ba87-d5d2561e26dd"> 
+</br>
+<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/870e624d-e97a-43a0-bce4-6ed34e64d3ec"> 
+</br> </br>
+__Редактирование книги (/book/{id}/edit)__  
+<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/c4369427-cedd-4f7f-91dc-5aafabc6d728"> 
+</br> </br>
+__Добавление книги (/book/new)__  
+<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/a2bc64bd-bbb6-4d5d-8013-fa620e076246"> 
 
 ## Используемые технологии
 * Java(JDK 14)
