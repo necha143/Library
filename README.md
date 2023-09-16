@@ -22,35 +22,35 @@
 
 ## Страницы web-приложения
 __Главная страница (/main)__  
-<img width="496" alt="image" src="https://github.com/necha143/Library/assets/113212609/fe5b35bf-b7ce-41ef-a1b6-611b69096ac7"> 
+![main](https://github.com/necha143/Library/assets/113212609/727887bb-cabf-4147-808b-f855e378350a)
 </br> </br> 
 __Все пользователи (/people)__  
-<img width="550" alt="image" src="https://github.com/necha143/Library/assets/113212609/8bbcae45-7660-435e-b0bc-df620a4b51d8"> 
-</br> </br>
+![people](https://github.com/necha143/Library/assets/113212609/b16f4115-491e-4dba-8c43-759364a16877)
+</br> </br> 
 __Страница пользователя (/people/{id})__  
-<img width="550" alt="image" src="https://github.com/necha143/Library/assets/113212609/d325ef58-b984-403a-bb52-135dedc63752"> 
-</br>
-<img width="520" alt="image" src="https://github.com/necha143/Library/assets/113212609/b345cd37-5685-4af6-973b-52e464b156f5"> 
-</br> </br>
+![person1](https://github.com/necha143/Library/assets/113212609/9d8306a8-5064-4353-9208-cf9c7d15f177)
+![person2](https://github.com/necha143/Library/assets/113212609/db29b4e5-40ee-4cc4-bc6b-1fa8c8b3e4c1)
+</br> </br> 
 __Редактирование пользователя (/people/{id}/edit)__  
-<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/f9596ea6-2f91-474e-bb11-d130aac25216"> 
-</br> </br>
+![editp](https://github.com/necha143/Library/assets/113212609/e3873a14-2921-40a0-bebd-bc9473b7d1ca)
+</br> </br> 
 __Добавление пользователя (/people/new)__  
-<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/5be40de4-f9cf-45ae-aa93-79d63593b262"> 
-</br> </br>
+![addp](https://github.com/necha143/Library/assets/113212609/b75aa605-a5cd-486e-aec7-368fff208990)
+</br> </br> 
 __Все книги (/book)__  
-<img width="700" alt="image" src="https://github.com/necha143/Library/assets/113212609/c720e00b-6443-4422-9d09-a8e895c0098a"> 
-</br> </br>
+![books](https://github.com/necha143/Library/assets/113212609/a0a43986-3560-428b-aae1-346da653104c)
+</br> </br> 
 __Страница книги (/book/{id})__  
-<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/9668475c-4b62-4274-ba87-d5d2561e26dd"> 
-</br>
-<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/870e624d-e97a-43a0-bce4-6ed34e64d3ec"> 
-</br> </br>
+![book1](https://github.com/necha143/Library/assets/113212609/bd2da2d7-3ebc-489a-9f8c-1a5559cd3e86)
+![book2](https://github.com/necha143/Library/assets/113212609/fd751def-4fc4-40bd-9973-37f5a3761201)
+</br> </br> 
 __Редактирование книги (/book/{id}/edit)__  
-<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/c4369427-cedd-4f7f-91dc-5aafabc6d728"> 
-</br> </br>
+![editb](https://github.com/necha143/Library/assets/113212609/65d1b5e6-c1c9-4d76-b307-015c883e3f31)
+</br> </br> 
 __Добавление книги (/book/new)__  
-<img width="650" alt="image" src="https://github.com/necha143/Library/assets/113212609/a2bc64bd-bbb6-4d5d-8013-fa620e076246"> 
+![addb](https://github.com/necha143/Library/assets/113212609/8ce00320-518c-49a9-b438-0ca55563fdf7)
+
+
 
 ## Используемые технологии
 * Java(JDK 14)
